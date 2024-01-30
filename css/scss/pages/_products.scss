@@ -316,8 +316,9 @@
 		position: absolute;
 		left: 30px;
 		top: 22px;
-		z-index: 2;
+		z-index: -1;
 		&--open{
+			z-index: 2;
 			svg{
 				transition: all .3s;
 				rect{
@@ -331,13 +332,15 @@
 		top: 20px;
 		left: 50%;
 		transform: translateX(-50%);
+		z-index: -1;
 	}
 	.wrapper-right-burger {
 		position: fixed;
 		right: 30px;
 		top: 20px;
-		z-index: 1;
+		z-index: -1;
 		&--open{
+			z-index: 2;
 			svg{
 				transition: all .3s;
 				rect{
@@ -359,7 +362,7 @@
 			background: #1a1818;
 			right: 0;
 			border-radius: 32px;
-			z-index: 2;
+			z-index: 1;
 		}
 	}
 	.wrapper-left {
@@ -377,7 +380,7 @@
 			left: 0;
 			background: #1a1818;
 			border-radius: 32px;
-			z-index: 2;
+			z-index: 1;
 		}
 	}
 	.wrapper-center {

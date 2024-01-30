@@ -1,3 +1,33 @@
+$(document).ready(function(){
+  $('.restaurant-slider__wrap').slick({
+      centerMode: true,
+      slidesToShow: 1,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 481,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+});
+$(".burger-wrap").click(function () {
+$(".header-wrap__navigation").toggleClass("header-wrap__navigation--open");
+$(".burger").toggleClass('burger--close');
+});
+
 const headers = document.querySelectorAll("[data-name='m-category']")
 
 headers.forEach(function (item){
@@ -101,32 +131,3 @@ function OpenSideR(){
 
 
 
-$(document).ready(function(){
-    $('.restaurant-slider__wrap').slick({
-        centerMode: true,
-        slidesToShow: 1,
-        dots: true,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
-          },
-          {
-            breakpoint: 481,
-            settings: {
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-});
-$(".burger-wrap").click(function () {
-  $(".header-wrap__navigation").toggleClass("header-wrap__navigation--open");
-  $(".burger").toggleClass('burger--close');
-});
