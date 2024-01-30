@@ -2,17 +2,16 @@
     <header class="header">
 		<div class="container">
 			<div class="header-wrap">
-				<div class="header-wrap__logo">
+				<a href="/" class="header-wrap__logo">
 					<img src="/template/img/logo.svg" alt="">
-				</div>
+				</a>
 				<div class="burger-wrap">
                     <div class="burger"></div>
                 </div>
 				<ul class="header-wrap__navigation">
-					<li><a href="">Home</a></li>
-					<li><a href="">Menu</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Contacts</a></li>
+					<li><a href="/">Home</a></li>
+					<li><a href="/products">Menu</a></li>
+					<li><a href="/articles">Blog</a></li>
 				</ul>
 				<div class="header-wrap__icons">
 					<a href="">
@@ -20,7 +19,7 @@
 							<path d="M39.9375 30.2344L38.1211 38.1094C37.8659 39.2227 36.8875 40.0016 35.7414 40.0016C16.0312 40 0 23.9688 0 4.25781C0 3.1125 0.778828 2.13281 1.89219 1.87891L9.76719 0.0625021C10.9141 -0.203279 12.0859 0.392033 12.5625 1.47813L16.1969 9.95469C16.6217 10.9531 16.3352 12.1164 15.4953 12.8023L11.2891 16.1797C13.9438 21.5875 18.3406 25.9844 23.75 28.6406L27.1937 24.4375C27.8725 23.5953 29.0445 23.3039 30.043 23.7363L38.5195 27.3699C39.5391 27.9063 40.2031 29.0938 39.9375 30.2344Z" fill="white"/>
 						</svg>							
 					</a>
-					<a href="">
+					<a href="/order">
 						<svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M13.0508 16.9188C13.9789 16.9188 14.7321 16.1656 14.7321 15.2375V8.68011C14.7321 5.74863 17.1172 3.36275 20.0486 3.36275C22.9801 3.36275 25.366 5.74863 25.366 8.68011V15.2375C25.366 16.1656 26.1184 16.9188 27.0474 16.9188C27.9755 16.9188 28.7288 16.1656 28.7288 15.2375V8.68011C28.7296 3.89407 24.8355 0 20.0486 0C15.2635 0 11.3694 3.89407 11.3694 8.68011V15.2375C11.3694 16.1656 12.1226 16.9188 13.0508 16.9188Z" fill="white"/>
 							<path d="M39.3358 13.1408H30.4111V15.2375C30.4111 17.092 28.9029 18.6002 27.0483 18.6002C25.1937 18.6002 23.6856 17.092 23.6856 15.2375V13.1408H16.4144V15.2375C16.4144 17.092 14.9062 18.6002 13.0517 18.6002C11.1971 18.6002 9.68894 17.092 9.68894 15.2375V13.1408H0.664152C0.200092 13.1408 -0.0865828 13.5065 0.0235473 13.9571L5.90668 37.9142C6.26145 39.261 7.67885 40.353 9.07103 40.353H30.9289C32.3228 40.353 33.7385 39.261 34.095 37.9142L39.9764 13.9571C40.0865 13.5057 39.8007 13.1408 39.3358 13.1408Z" fill="white"/>
@@ -41,8 +40,7 @@
 					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like.
 				</div>
 				<div class="welcome__btn-wrap">
-					<a href="" class="btn">Menu</a>
-					<a href="" class="btn">Our restorant</a>
+					<a href="/products" class="btn">Menu</a>
 				</div>
 			</div>
 		</div>
@@ -100,6 +98,9 @@
 					<img src="/template/img/dishes.png" alt="">
 				</div>
 			</div>
+
+			<!-- REPLACE CATEGORY FOR MOBILE -->
+
 			<div class="dishes-categories dishes-categories--mobile">
 				<a href="" class="dishes-categories__wrap">
 					<div class="dishes-categories__item">
@@ -142,8 +143,10 @@
 					</div>
 				</a>
 			</div>
+
+
 			<div class="dishes__btn">
-				<a href="" class="btn">ALL DISHES</a>
+				<a href="/products" class="btn">ALL DISHES</a>
 			</div>
 		</div>
 	</section>
@@ -251,7 +254,7 @@
 				Blog
 			</div>
 			<div class="blog-wrapper">
-				<div class="blog-wrapper__wrap">
+				<a href="" class="blog-wrapper__wrap">
 					<div class="blog-wrapper__item">
 						<div class="blog-wrapper__img">
 							<img src="/template/img/blog/1.png" alt="">
@@ -263,8 +266,8 @@
 							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like....
 						</div>
 					</div>
-				</div>
-				<div class="blog-wrapper__wrap">
+				</a>
+				<a href="" class="blog-wrapper__wrap">
 					<div class="blog-wrapper__item">
 						<div class="blog-wrapper__img">
 							<img src="/template/img/blog/2.png" alt="">
@@ -276,10 +279,10 @@
 							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like....
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 			<div class="blog__btn">
-				<a href="" class="btn">
+				<a href="/articles" class="btn">
 					ALL ARTICLES
 				</a>
 			</div>

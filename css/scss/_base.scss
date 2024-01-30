@@ -38,6 +38,9 @@ ul{
 	padding: 0;
 	list-style: none;
 }
+input{
+	color: #fff;
+}
 .content {
 	flex: 1 0 auto;
 }
@@ -232,6 +235,7 @@ ul{
 				width: 100%;
 				background: none;
 				border: 1px solid $red;
+				color: #fff;
 			}
 			img{
 				position: absolute;
@@ -248,10 +252,17 @@ ul{
 		}
 		&-contacts{
 			padding-top: 30px;
+			
 			&__wrap{
 				display: flex;
 				align-items: center;
 				margin-bottom: 15px;
+				
+				&:hover{
+					.wrapper-right-contacts__wrap-text{
+						color: $red;
+					}
+				}
 				&:last-child{
 					margin-bottom: 0;
 				}
@@ -267,6 +278,9 @@ ul{
 					margin-left: 10px;
 					font-size: 16px;
 					word-break: break-word;
+					color: $white;
+					transition: all .3s;
+					cursor: pointer;
 				}
 			}
 		}

@@ -29,6 +29,7 @@
 		}
 		&-description{
 			font-size: 16px;
+			color: $white;
 		}
 	}
 	&__img{
@@ -161,6 +162,7 @@
 			&__description{
 				font-size: 16px;
 				padding-bottom: 5px;
+				color: $white;
 			}
 		}
 	}
@@ -245,6 +247,7 @@
 	.wrapper-right-serch input {
 		padding: 6px 10px 6px 37px;
 		font-size: 16px;
+		
 	}
 	.wrapper-right-contacts {
 		padding-top: 20px;
