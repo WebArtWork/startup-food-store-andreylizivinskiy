@@ -25,18 +25,80 @@
 	<link rel="icon" type="image/x-icon" href="/template/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="/template/libs/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="/template/libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="/template/libs/fancy-modal/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="/template/libs/fancy-modal/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="/template/css/index.css">
 	<style>
 	/* <!-- CSS --> */
 	</style>
 </head>
 <body>
-
+	
 	<!-- HTML -->
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="/template/libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="/template/libs/fancy-modal/jquery.fancybox.min.js"></script>
 	<script src="/template/js/index.js"></script>
+	<div class="modal modal-form modal-reg" id="modal-form" style="display: none;">
+		<div class="modal__body-form">
+			<div class="product-wrap-text__title-wrap modal__title">
+				<div class="product-wrap-text__title-img">
+					<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+						<g clip-path="url(#clip0_25_166)">
+						<path d="M25.2368 15.6621C26.0051 15.6643 26.7661 15.5093 27.4759 15.2063C28.1857 14.9032 28.8301 14.4581 29.3718 13.8966L34.9991 8.1007C35.4441 7.642 35.4851 6.89558 35.0612 6.41428C34.9548 6.29336 34.8256 6.19599 34.6816 6.12806C34.5376 6.06013 34.3817 6.02307 34.2233 6.01913C34.065 6.01518 33.9075 6.04444 33.7604 6.10511C33.6134 6.16579 33.4798 6.25662 33.3679 6.3721L28.3523 11.5376C28.1839 11.7109 27.9556 11.8083 27.7175 11.8083C27.4795 11.8083 27.2512 11.7109 27.0828 11.5376C26.7328 11.1775 26.7518 10.5689 27.1011 10.2089L32.0948 5.06229C32.2067 4.94691 32.2948 4.80932 32.3536 4.65784C32.4124 4.50636 32.4407 4.34415 32.4369 4.18104C32.4331 4.01794 32.3971 3.85733 32.3313 3.70896C32.2655 3.56058 32.1711 3.42753 32.0539 3.31787C31.8423 3.12005 31.5664 3.0112 31.2807 3.01282C30.9569 3.01305 30.6464 3.14581 30.4176 3.38189L25.4283 8.52325C25.2598 8.6966 25.0316 8.79397 24.7935 8.79397C24.5555 8.79397 24.3272 8.6966 24.1588 8.52325C23.8095 8.16322 23.8278 7.55463 24.1771 7.1946L29.1708 2.04948C29.2827 1.93411 29.3708 1.79651 29.4296 1.64503C29.4884 1.49355 29.5167 1.33134 29.5129 1.16824C29.5091 1.00513 29.4731 0.844523 29.4073 0.69615C29.3415 0.547776 29.2471 0.414727 29.1299 0.305064C28.9182 0.107245 28.6423 -0.00160248 28.3566 1.78333e-05C28.0329 0.000412837 27.7225 0.133141 27.4936 0.369087L21.8699 6.16497C21.325 6.72337 20.8931 7.38763 20.599 8.11927C20.305 8.85092 20.1547 9.63542 20.1568 10.4273V11.0472C20.157 11.2057 20.1268 11.3627 20.0679 11.5091C20.0091 11.6555 19.9229 11.7886 19.8141 11.9006L17.2116 14.5835C17.1845 14.6115 17.1523 14.6337 17.1168 14.6489C17.0813 14.6641 17.0432 14.6719 17.0048 14.6719C16.9664 14.6719 16.9284 14.6641 16.8929 14.6489C16.8574 14.6337 16.8251 14.6115 16.798 14.5835L4.13435 1.53128C3.91578 1.30576 3.61943 1.17867 3.31016 1.17783C3.00088 1.17698 2.70388 1.30244 2.48416 1.52676C1.37696 2.65731 0.785731 4.25335 0.785731 6.14162C0.778422 9.25988 2.36869 12.8451 4.93606 15.4873L11.1809 21.9235C12.0685 22.8364 13.2712 23.3491 14.5251 23.3493C14.9249 23.3494 15.323 23.2968 15.7098 23.1926C15.8069 23.1664 15.9069 23.153 16.0073 23.1527C16.3008 23.1527 16.5835 23.2671 16.7987 23.4728L17.6311 24.2652C17.8458 24.4912 17.9664 24.7947 17.9673 25.111V25.5283C17.9652 26.4769 18.3269 27.3879 18.9736 28.0628L25.5547 34.9599L25.5613 34.9674C26.2917 35.7201 27.2823 36.1429 28.3153 36.1429C29.3482 36.1428 30.3388 35.7198 31.0691 34.967C31.7994 34.2142 32.2097 33.1932 32.2096 32.1287C32.2095 31.0641 31.7992 30.0432 31.0687 29.2905L21.2041 19.1238C21.1769 19.0958 21.1554 19.0626 21.1407 19.026C21.1259 18.9895 21.1184 18.9502 21.1184 18.9107C21.1184 18.8711 21.1259 18.8319 21.1407 18.7953C21.1554 18.7587 21.1769 18.7255 21.2041 18.6975L23.8066 16.0153C23.9152 15.9033 24.0441 15.8145 24.1861 15.7539C24.328 15.6933 24.4802 15.6621 24.6339 15.6621H25.2368Z" fill="white"></path>
+						<path d="M14.8948 25.2717C13.0865 25.268 11.3526 24.5515 10.0692 23.2775L9.09077 22.2991C8.9849 22.1935 8.84146 22.1342 8.69193 22.1342C8.54239 22.1342 8.39895 22.1935 8.29308 22.2991L2.29281 28.2684C1.22334 29.3378 0.841444 30.912 1.37088 32.4537C1.40051 32.5406 1.43564 32.6255 1.47606 32.7079C2.18833 34.1663 3.57051 35.0134 5.08258 35.0134C5.60258 35.0147 6.11767 34.9127 6.598 34.7135C7.07833 34.5143 7.51436 34.2218 7.88083 33.8529L15.8831 25.8125C15.9168 25.7781 15.9426 25.7368 15.9586 25.6915C15.9747 25.6461 15.9808 25.5978 15.9763 25.5499V25.5315C15.9731 25.4875 15.9611 25.4446 15.9409 25.4053C15.9208 25.3661 15.8928 25.3313 15.8589 25.3032C15.8249 25.275 15.7856 25.254 15.7433 25.2414C15.701 25.2289 15.6566 25.225 15.6127 25.2301C15.3743 25.2565 15.1347 25.2704 14.8948 25.2717Z" fill="white"></path>
+						</g>
+						<defs>
+						<clipPath id="clip0_25_166">
+						<rect width="36.1429" height="36.1429" fill="white"></rect>
+						</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<div class="product-wrap-text__title-text">
+					Placing an order
+				</div>
+			</div>
+			<!--
+			<div class="modal-finish">
+				<div class="modal-finish__img">
+					<svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" viewBox="0 0 46 36" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M44.7677 1.23223C45.744 2.20855 45.744 3.79145 44.7677 4.76777L14.7678 34.7677C14.2989 35.2365 13.663 35.5 13 35.5C12.337 35.5 11.7011 35.2365 11.2322 34.7677L1.23223 24.7677C0.255925 23.7915 0.255925 22.2085 1.23223 21.2323C2.20855 20.256 3.79145 20.256 4.76777 21.2323L13 29.4645L41.2323 1.23223C42.2085 0.255925 43.7915 0.255925 44.7677 1.23223Z" fill="#E83126"/>
+					</svg>
+				</div>
+				<div class="modal-finish__title">
+					The order has been processed successfully
+				</div>
+				<div class="modal-finish__time">
+					(The order will be delivered within 1 hour)
+				</div>
+			</div>
+			-->
+			<form action="">
+				<div class="modal__input">
+					<input type="text" placeholder="Enter your name">
+					<img src="/template/img/icons/user.svg" alt="">
+				</div>
+				<div class="modal__input">
+					<input type="text" placeholder="Enter your number">
+					<img src="/template/img/icons/phone.svg" alt="">
+				</div>
+				<div class="select modal__select">
+					<img src="/template/img/icons/card.svg" alt="">
+					<input class="select__input" type="hidden" name="">
+					<div class="select__head">Payment option</div>
+					<ul class="select__list" style="display: none;">
+						<li class="select__item">Cash</li>
+						<li class="select__item">Сard</li>
+					</ul>
+				</div>
+				<button class="modal__btn">MAKE ORDER</button>
+			</form>
+			
+		</div>
+	</div>
 	
 </body>
+
 </html>
