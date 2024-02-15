@@ -326,16 +326,36 @@ input{
 		&__category{
 			display: flex;
     		align-items: center;
+			transition: all .3s;
+			cursor: pointer;
 			&:first-child{
 				margin-bottom: 15px;
 			}
 			&-img{		
 				margin-right: 10px;
 				display: flex;
+				svg{
+					path{
+						transition: all .3s;
+					}
+				}
 			}
 			&-text{
 				font-size: 30px;
     			font-weight: 300;
+				transition: all .3s;
+			}
+			&:hover{
+				.wrapper-left__category-img{
+					svg{
+						path{
+							fill: $red;
+						}
+					}
+				}
+				.wrapper-left__category-text{
+					color: $red;
+				}
 			}
 		}
 		&__item{

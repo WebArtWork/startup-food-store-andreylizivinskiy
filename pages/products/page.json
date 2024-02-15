@@ -1,26 +1,57 @@
 {
 	"name": "products",
-	"products": [
+	"tags": [
 		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-			"name": "product"
+			"name": "ПІЦЦА",
+			"products": [
+				{
+					"name": "ГАВАЙСЬКА",
+					"price": "299ГРН",
+					"weight": "500Г",
+					"description": "Тісто фірмове, вершкова основа, моцарела, курка, ананаси, дорблю, чедер, соус світ айолі, соус песто, базилік",
+					"thumb": "/andriilizvinskiy/img/menu/1.png"
+				},
+				{
+					"name": "ПАПЕРОНІ",
+					"price": "150ГРН",
+					"weight": "450Г",
+					"description": "Тісто фірмове, томатна основа, моцарела, пепероні",
+					"thumb": "/andriilizvinskiy/img/menu/2.png"
+				},
+				{
+					"name": "ПОЛО",
+					"price": "230ГРН",
+					"weight": "480Г",
+					"description": "Соус Pelati, моцарела, куряче філе, печериці, помідори, маслини",
+					"thumb": "/andriilizvinskiy/img/menu/3.png"
+				}
+			]
 		},
 		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-			"name": "product"
-		},
-		{
-			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        	"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-			"name": "product"
+			"name": "СУШІ",
+			"products": [
+				{
+					"name": "НІГІРІ З ЛОСОСЕМ",
+					"price": "200ГРН",
+					"weight": "400Г(4ШТ)",
+					"description": "Лосось,рис",
+					"thumb": "/andriilizvinskiy/img/menu/sushi/1.png"
+				},
+				{
+					"name": "ФІЛАДЕЛЬФІЯ З ЛОСОСЕМ",
+					"price": "200ГРН",
+					"weight": "500Г(8ШТ)",
+					"description": "Норі, Рис, Сир філа, Огірок, Копчений лосось",
+					"thumb": "/andriilizvinskiy/img/menu/sushi/2.png"
+				},
+				{
+					"name": "МАКІ З ЛОСОСЕМ",
+					"price": "120ГРН",
+					"weight": "300Г(8ШТ)",
+					"description": "Норі, Рис, Лосось філе, Авокадо",
+					"thumb": "/andriilizvinskiy/img/menu/sushi/3.png"
+				}
+			]
 		}
 	]
 }
