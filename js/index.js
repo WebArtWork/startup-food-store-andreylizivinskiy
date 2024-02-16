@@ -1,3 +1,12 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
 $(document).ready(function(){
   $('.restaurant-slider__wrap').slick({
       centerMode: true,
@@ -54,6 +63,8 @@ $(".burger-wrap").click(function () {
 $(".header-wrap__navigation").toggleClass("header-wrap__navigation--open");
 $(".burger").toggleClass('burger--close');
 });
+
+
 
 const headers = document.querySelectorAll("[data-name='m-category']")
 
