@@ -3,6 +3,7 @@
 	"tags": [
 		{
 			"name": "ПІЦЦА",
+			"id": "pizza",
 			"products": [
 				{
 					"name": "ГАВАЙСЬКА",
@@ -29,6 +30,7 @@
 		},
 		{
 			"name": "СУШІ",
+			"id": "sushi",
 			"products": [
 				{
 					"name": "НІГІРІ З ЛОСОСЕМ",

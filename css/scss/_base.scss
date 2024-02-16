@@ -192,18 +192,13 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
 	background-color: $dark;
 	color: $white;
 	font-size: 20px;
 	overflow-x: hidden;
 }
-
-html {
-	height: 100%;
-	overflow: hidden;
+html{
+	
 }
 ul{
 	padding: 0;
@@ -307,11 +302,13 @@ input{
 	margin-top: -30px;
 	height: calc(100vh - 190px);
 	overflow: hidden;
+	scroll-behavior: smooth;
 	&-left{
 		flex: 0 0 20%;
 		max-width: 20%;
 		padding: 25px 10px 25px 15px;
 		height: 100%;
+		
 		&-burger{
 			display: none;
 			@media screen and (max-width: 991px) {
@@ -328,6 +325,7 @@ input{
     		align-items: center;
 			transition: all .3s;
 			cursor: pointer;
+			color: #fff;
 			&:first-child{
 				margin-bottom: 15px;
 			}
@@ -490,6 +488,7 @@ input{
 		height: 100%;
 		border-left: 4px solid rgba(217,217,217,.1);
 		border-right: 4px solid rgba(217,217,217,.1);
+		scroll-behavior: smooth;
 		&--big{
 			flex: 0 0 80%;
 			max-width: 80%;

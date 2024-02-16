@@ -15,7 +15,12 @@
 		"primary_text_color": "#000000",
 		"secondary_text_color": "#FFFFFF",
 		"primary_radius": "0",
-		"secondar_radius": "0"
+		"secondar_radius": "0",
+		"time": "11:00 - 22: 00",
+		"tel": "+380689813717",
+		"mail": "testmail@gmail.com",
+		"insta": "@Test_Inst",
+		"telega": "@test02"
 	},
 	"store": {
 		"name": "Store Name",
