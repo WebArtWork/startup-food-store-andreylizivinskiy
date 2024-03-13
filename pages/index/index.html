@@ -33,11 +33,10 @@
 		<div class="container">
 			<div class="welcome__text">
 				<div class="welcome__title">
-					NAME OF
-					<span>RESTORANT</span>
+					{{{variables.Wtitle}}}
 				</div>
 				<div class="welcome__description">
-					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like.
+					{{{variables.Wdescription}}}
 				</div>
 				<div class="welcome__btn-wrap">
 					<a href="/products" class="btn">Menu</a>
@@ -52,46 +51,18 @@
 					<div class="dishes-text__title title-l">Our dishes</div>
 					<div class="dishes-text__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like.</div>
 					<div class="dishes-categories">
+						{% for product in top_products %}
 						<a href="" class="dishes-categories__wrap">
 							<div class="dishes-categories__item">
 								<div class="dishes-categories__img">
-									<img src="/andriilizvinskiy/img/category.png" alt="">
+									<img src="{{{product.thumb}}}" alt="">
 								</div>
 								<div class="dishes-categories__text">
-									CATEGORI OF FOOD
+									{{{product.name}}}
 								</div>
 							</div>
 						</a>
-						<a href="" class="dishes-categories__wrap">
-							<div class="dishes-categories__item">
-								<div class="dishes-categories__img">
-									<img src="/andriilizvinskiy/img/category.png" alt="">
-								</div>
-								<div class="dishes-categories__text">
-									CATEGORI OF FOOD
-								</div>
-							</div>
-						</a>
-						<a href="" class="dishes-categories__wrap">
-							<div class="dishes-categories__item">
-								<div class="dishes-categories__img">
-									<img src="/andriilizvinskiy/img/category.png" alt="">
-								</div>
-								<div class="dishes-categories__text">
-									CATEGORI OF FOOD
-								</div>
-							</div>
-						</a>
-						<a href="" class="dishes-categories__wrap">
-							<div class="dishes-categories__item">
-								<div class="dishes-categories__img">
-									<img src="/andriilizvinskiy/img/category.png" alt="">
-								</div>
-								<div class="dishes-categories__text">
-									CATEGORI OF FOOD
-								</div>
-							</div>
-						</a>
+						{% endfor %}
 					</div>
 				</div>
 				<div class="dishes-img">
@@ -102,46 +73,18 @@
 			<!-- REPLACE CATEGORY FOR MOBILE -->
 
 			<div class="dishes-categories dishes-categories--mobile">
+				{% for product in top_products %}
 				<a href="" class="dishes-categories__wrap">
 					<div class="dishes-categories__item">
 						<div class="dishes-categories__img">
-							<img src="/andriilizvinskiy/img/category.png" alt="">
+							<img src="{{{product.thumb}}}" alt="">
 						</div>
 						<div class="dishes-categories__text">
-							CATEGORI OF FOOD
+							{{{product.name}}}
 						</div>
 					</div>
 				</a>
-				<a href="" class="dishes-categories__wrap">
-					<div class="dishes-categories__item">
-						<div class="dishes-categories__img">
-							<img src="/andriilizvinskiy/img/category.png" alt="">
-						</div>
-						<div class="dishes-categories__text">
-							CATEGORI OF FOOD
-						</div>
-					</div>
-				</a>
-				<a href="" class="dishes-categories__wrap">
-					<div class="dishes-categories__item">
-						<div class="dishes-categories__img">
-							<img src="/andriilizvinskiy/img/category.png" alt="">
-						</div>
-						<div class="dishes-categories__text">
-							CATEGORI OF FOOD
-						</div>
-					</div>
-				</a>
-				<a href="" class="dishes-categories__wrap">
-					<div class="dishes-categories__item">
-						<div class="dishes-categories__img">
-							<img src="/andriilizvinskiy/img/category.png" alt="">
-						</div>
-						<div class="dishes-categories__text">
-							CATEGORI OF FOOD
-						</div>
-					</div>
-				</a>
+				{% endfor %}
 			</div>
 
 
@@ -254,32 +197,21 @@
 				Blog
 			</div>
 			<div class="blog-wrapper">
+				{% for article in articles %}
 				<a href="" class="blog-wrapper__wrap">
 					<div class="blog-wrapper__item">
 						<div class="blog-wrapper__img">
 							<img src="/andriilizvinskiy/img/blog/1.png" alt="">
 						</div>
 						<div class="blog-wrapper__title">
-							Name for this article
+							{{{article.name}}}
 						</div>
 						<div class="blog-wrapper__description">
-							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like....
+							{{{article.short}}}
 						</div>
 					</div>
 				</a>
-				<a href="" class="blog-wrapper__wrap">
-					<div class="blog-wrapper__item">
-						<div class="blog-wrapper__img">
-							<img src="/andriilizvinskiy/img/blog/2.png" alt="">
-						</div>
-						<div class="blog-wrapper__title">
-							Name for this article
-						</div>
-						<div class="blog-wrapper__description">
-							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like....
-						</div>
-					</div>
-				</a>
+				{% endfor %}
 			</div>
 			<div class="blog__btn">
 				<a href="/articles" class="btn">
@@ -296,25 +228,25 @@
 			<div class="contacts-wrap">
 				<div class="contacts-links">
 					
-					<a href="" class="contacts-links__link">
+					<a href="{{{variables.link_phone}}}" class="contacts-links__link">
 						<img src="/andriilizvinskiy/img/icons/phoner.svg" alt="">
-						<span>+380 836547145</span>
+						<span>{{{variables.tel}}}</span>
 					</a>
-					<a href="" class="contacts-links__link">
+					<a href="{{{variables.link_mail}}}" class="contacts-links__link">
 						<img src="/andriilizvinskiy/img/icons/mail.svg" alt="">
-						<span>@examplemail@gmail.com</span>
+						<span>{{{variables.mail}}}</span>
 					</a>
-					<a href="" class="contacts-links__link">
+					<a href="{{{variables.link_telegram}}}" class="contacts-links__link">
 						<img src="/andriilizvinskiy/img/icons/telegram.svg" alt="">
-						<span>@KpRestorNich</span>
+						<span>{{{variables.telega}}}</span>
 					</a>
-					<a href="" class="contacts-links__link">
+					<a href="{{{variables.link_instagram}}}" class="contacts-links__link">
 						<img src="/andriilizvinskiy/img/icons/instagram.svg" alt="">
-						<span>@re_st_or_an__kp01</span>
+						<span>{{{variables.insta}}}</span>
 					</a>
 					<a href="" class="contacts-links__link">
 						<img src="/andriilizvinskiy/img/icons/loc.svg" alt="">
-						<span>Kamianets-Podilskyi, Khmelnytskyi region, 32301</span>
+						<span>{{{variables.address}}}</span>
 					</a>
 				</div>
 				<div class="contacts-map">
@@ -351,21 +283,21 @@
 				</div>
 			</div>
 			<div class="footer-wrap__item footer-wrap__item--socials">
-				<a href="">
+				<a href="{{{variables.link_mail}}}">
 					<img src="/andriilizvinskiy/img/icons/mail.svg" alt="">
-					<span>@examplemail@gmail.com</span>
+					<span>{{{variables.mail}}}</span>
 				</a>
-				<a href="">
+				<a href="{{{variables.link_phone}}}">
 					<img src="/andriilizvinskiy/img/icons/phoner.svg" alt="">
-					<span>+380 836547145</span>
+					<span>{{{variables.tel}}}</span>
 				</a>
-				<a href="">
+				<a href="{{{variables.link_telegram}}}">
 					<img src="/andriilizvinskiy/img/icons/telegram.svg" alt="">
-					<span>@KpRestorNich</span>
+					<span>{{{variables.telega}}}</span>
 				</a>
-				<a href="">
+				<a href="{{{variables.link_instagram}}}">
 					<img src="/andriilizvinskiy/img/icons/instagram.svg" alt="">
-					<span>@re_st_or_an__kp01</span>
+					<span>{{{variables.insta}}}</span>
 				</a>
 			</div>
 		</div>

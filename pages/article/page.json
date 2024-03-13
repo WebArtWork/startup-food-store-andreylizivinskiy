@@ -1,9 +1,20 @@
+
 {
 	"name": "article",
 	"article": {
 		"id": "/article",
 		"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
+        "thumb": "/andriilizvinskiy/img/product.png",
 		"name": "Article Name"
-	}
+	},
+	"tags": [
+		{
+			"name": "First tag",
+			"id": "first"
+		},
+		{
+			"name": "Second tag",
+			"id": "second"
+		}
+	]
 }
