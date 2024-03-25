@@ -48,7 +48,8 @@
 				</div>
 				<div class="wrapper-left">
 					<div class="wrapper-left-list">
-						<div class="wrapper-left__category">
+						{% for tag in tags %}
+						<a href="#{{{tag.id}}}" class="anchor wrapper-left__category ">
 							<div class="wrapper-left__category-img">
 								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<g clip-path="url(#clip0_25_176)">
@@ -62,43 +63,10 @@
 								</svg>
 							</div>
 							<div class="wrapper-left__category-text">
-								Popular
+								{{{tag.name}}}
 							</div>
-						</div>
-						<div class="wrapper-left__category">
-							<div class="wrapper-left__category-img">
-								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_25_176)">
-									<path d="M18.1546 11.2668C18.7072 11.2684 19.2547 11.1569 19.7653 10.9389C20.2759 10.7209 20.7394 10.4007 21.1291 9.99676L25.1772 5.82738C25.4974 5.49741 25.5268 4.96046 25.2219 4.61423C25.1454 4.52724 25.0525 4.45719 24.9489 4.40833C24.8453 4.35946 24.7331 4.3328 24.6192 4.32996C24.5053 4.32713 24.392 4.34817 24.2862 4.39182C24.1804 4.43547 24.0843 4.50081 24.0038 4.58388L20.3957 8.29975C20.2746 8.42445 20.1104 8.4945 19.9391 8.4945C19.7679 8.4945 19.6037 8.42445 19.4825 8.29975C19.2307 8.04075 19.2444 7.60295 19.4957 7.34396L23.088 3.64164C23.1685 3.55865 23.2318 3.45967 23.2741 3.3507C23.3165 3.24173 23.3368 3.12504 23.3341 3.00771C23.3313 2.89037 23.3055 2.77484 23.2581 2.6681C23.2108 2.56137 23.1429 2.46566 23.0585 2.38677C22.9063 2.24446 22.7078 2.16616 22.5023 2.16733C22.2694 2.16749 22.0461 2.26299 21.8814 2.43282L18.2923 6.13135C18.1712 6.25605 18.0069 6.3261 17.8357 6.3261C17.6645 6.3261 17.5003 6.25605 17.3791 6.13135C17.1278 5.87235 17.141 5.43456 17.3923 5.17556L20.9846 1.47433C21.0651 1.39133 21.1284 1.29235 21.1707 1.18338C21.213 1.07441 21.2334 0.957725 21.2307 0.840392C21.2279 0.723058 21.2021 0.607523 21.1547 0.500788C21.1073 0.394053 21.0394 0.298341 20.9551 0.219453C20.8029 0.0771485 20.6044 -0.00115277 20.3989 1.28287e-05C20.166 0.000296982 19.9427 0.095777 19.778 0.265509L15.7325 4.43488C15.3406 4.83658 15.0298 5.31442 14.8183 5.84074C14.6068 6.36706 14.4987 6.93141 14.5002 7.50109V7.94702C14.5003 8.06103 14.4786 8.17393 14.4363 8.27927C14.394 8.38461 14.3319 8.48032 14.2537 8.56091L12.3815 10.4909C12.362 10.5111 12.3388 10.527 12.3133 10.5379C12.2878 10.5489 12.2604 10.5545 12.2328 10.5545C12.2051 10.5545 12.1778 10.5489 12.1522 10.5379C12.1267 10.527 12.1035 10.5111 12.084 10.4909L2.97415 1.10155C2.81692 0.939323 2.60374 0.847898 2.38126 0.847289C2.15877 0.84668 1.94512 0.936935 1.78706 1.0983C0.990579 1.91158 0.565265 3.05972 0.565265 4.41809C0.560007 6.66126 1.70399 9.24036 3.55088 11.1411L8.04322 15.771C8.68172 16.4277 9.5469 16.7966 10.449 16.7967C10.7365 16.7968 11.0229 16.759 11.3012 16.684C11.371 16.6651 11.4429 16.6555 11.5151 16.6553C11.7263 16.6553 11.9297 16.7376 12.0845 16.8856L12.6833 17.4556C12.8377 17.6182 12.9245 17.8365 12.9251 18.064V18.3642C12.9236 19.0466 13.1838 19.702 13.6491 20.1875L18.3832 25.149L18.388 25.1544C18.9134 25.6959 19.6261 26.0001 20.3691 26C21.1122 26 21.8248 25.6957 22.3501 25.1541C22.8755 24.6126 23.1706 23.8781 23.1706 23.1123C23.1705 22.3465 22.8753 21.6121 22.3499 21.0707L15.2536 13.757C15.234 13.7369 15.2185 13.713 15.2079 13.6867C15.1974 13.6604 15.1919 13.6322 15.1919 13.6037C15.1919 13.5752 15.1974 13.547 15.2079 13.5207C15.2185 13.4944 15.234 13.4705 15.2536 13.4504L17.1257 11.5209C17.2038 11.4403 17.2966 11.3764 17.3987 11.3328C17.5008 11.2892 17.6103 11.2668 17.7208 11.2668H18.1546Z" fill="white"/>
-									<path d="M10.7148 18.1797C9.41399 18.177 8.16666 17.6615 7.24342 16.7451L6.53959 16.0413C6.46344 15.9653 6.36025 15.9226 6.25268 15.9226C6.14511 15.9226 6.04192 15.9653 5.96577 16.0413L1.64936 20.3353C0.880024 21.1047 0.605297 22.2371 0.986157 23.3462C1.00747 23.4086 1.03275 23.4697 1.06182 23.529C1.5742 24.5781 2.5685 25.1875 3.65623 25.1875C4.03031 25.1884 4.40084 25.1151 4.74638 24.9718C5.09191 24.8285 5.40558 24.618 5.6692 24.3526L11.4258 18.5687C11.45 18.5439 11.4685 18.5142 11.4801 18.4816C11.4917 18.449 11.496 18.4142 11.4928 18.3798V18.3666C11.4905 18.3349 11.4819 18.304 11.4674 18.2758C11.4529 18.2475 11.4328 18.2225 11.4083 18.2023C11.3839 18.182 11.3556 18.1669 11.3252 18.1579C11.2948 18.1488 11.2628 18.1461 11.2313 18.1497C11.0598 18.1687 10.8874 18.1787 10.7148 18.1797Z" fill="white"/>
-									</g>
-									<defs>
-									<clipPath id="clip0_25_176">
-									<rect width="26" height="26" fill="white"/>
-									</defs>
-								</svg>
-							</div>
-							<div class="wrapper-left__category-text">
-								Our choise
-							</div>
-						</div>
-						<div class="wrapper-left__wrap">
-							<div class="wrapper-left__item">
-								<div class="wrapper-left__title" data-name="m-category">
-									<div class="wrapper-left__title-text">
-										Menu punkt
-									</div>
-									<div class="wrapper-left__title-arrow">
-										<img src="/andriilizvinskiy/img/icons/arrowl.svg" alt="">
-									</div>
-								</div>
-								<div class="wrapper-left__description">
-									<p>1</p>
-									<p>2</p>
-									<p>3</p>
-								</div>
-							</div>
-						</div>
+						</a>
+						{% endfor %}
 					</div>
 				</div>
 				<div class="wrapper-right-serch wrapper-right-serch--mobile">
@@ -107,7 +75,8 @@
 				</div>
 				<div class="wrapper-center">
 					<div class="dishes-list">
-						<div class="dishes-list__category">
+						{% for tag in tags %}
+						<div class="dishes-list__category" id="{{{tag.id}}}">
 							<div class="dishes-list__category-img">
 								<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
 									<g clip-path="url(#clip0_25_166)">
@@ -122,19 +91,19 @@
 									</svg>						
 							</div>
 							<div class="dishes-list__category-title">
-								Popular
+								{{{tag.name}}}
 							</div>
 						</div>
-						<div class="articles-wrap">
+						{% for article in tag.articles %}
 							<a href="" class="articles-wrap__item">
 								<div class="articles-wrap__img">
-									<img src="/andriilizvinskiy/img/blog/1.png" alt="">
+									<img src="{{{article.thumb}}}" alt="">
 								</div>
 								<div class="articles-wrap__title">
-									Name for this article
+									{{{article.name}}}
 								</div>
 								<div class="articles-wrap__description">
-									The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like....
+									{{{article.description}}}
 								</div>
 								<div class="articles-wrap-heart">
 									<div class="articles-wrap-heart__img">
@@ -147,28 +116,8 @@
 									</div>
 								</div>
 							</a>
-							<a href="" class="articles-wrap__item">
-								<div class="articles-wrap__img">
-									<img src="/andriilizvinskiy/img/blog/1.png" alt="">
-								</div>
-								<div class="articles-wrap__title">
-									Name for this article
-								</div>
-								<div class="articles-wrap__description">
-									The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like....
-								</div>
-								<div class="articles-wrap-heart">
-									<div class="articles-wrap-heart__img">
-										<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
-											<path d="M10.0519 1.90302L10.0516 1.90325L9.35907 2.61691L9.00026 2.98666L8.64144 2.61691L7.94888 1.90325L7.9483 1.90266C6.34522 0.24529 3.77473 0.00654652 2.07212 1.45736C0.0871383 3.15169 -0.0191539 6.19962 1.75879 8.03793L10.0519 1.90302ZM10.0519 1.90302C11.6588 0.244953 14.2261 0.0067005 15.9285 1.45749C17.9134 3.15186 18.0196 6.19962 16.2383 8.03782L16.2382 8.03793L9.4357 15.0619C9.43567 15.0619 9.43564 15.062 9.4356 15.062C9.19261 15.3127 8.80426 15.3126 8.5613 15.0619L1.759 8.03814L10.0519 1.90302Z" stroke="#E83126"/>
-											</svg>
-									</div>
-									<div class="articles-wrap-heart__text">
-										10
-									</div>
-								</div>
-							</a>
-						</div>
+						{% endfor %}
+						{% endfor %}
 					</div>
 				</div>
 				<div class="wrapper-right-burger">
@@ -191,7 +140,7 @@
 									<img src="/andriilizvinskiy/img/icons/clock.svg" alt="">
 								</div>
 								<div class="wrapper-right-contacts__wrap-text">
-									11:00 - 22: 00
+									{{{variables.time}}}
 								</div>
 							</div>
 							<a href="" class="wrapper-right-contacts__wrap">
@@ -199,7 +148,7 @@
 									<img src="/andriilizvinskiy/img/icons/mail.svg" alt="">
 								</div>
 								<div class="wrapper-right-contacts__wrap-text">
-									examplemail@gmail.com
+									{{{variables.mail}}}
 								</div>
 							</a>
 							<a href="" class="wrapper-right-contacts__wrap">
@@ -207,7 +156,7 @@
 									<img src="/andriilizvinskiy/img/icons/phoner.svg" alt="">
 								</div>
 								<div class="wrapper-right-contacts__wrap-text">
-									+380 836547145
+									{{{variables.tel}}}
 								</div>
 							</a>
 							<a href="" class="wrapper-right-contacts__wrap">
@@ -215,7 +164,7 @@
 									<img src="/andriilizvinskiy/img/icons/instagram.svg" alt="">
 								</div>
 								<div class="wrapper-right-contacts__wrap-text">
-									+380 836547145
+									{{{variables.insta}}}
 								</div>
 							</a>
 							<a href="" class="wrapper-right-contacts__wrap">
@@ -223,7 +172,7 @@
 									<img src="/andriilizvinskiy/img/icons/telegram.svg" alt="">
 								</div>
 								<div class="wrapper-right-contacts__wrap-text">
-									@KpRestorNich
+									{{{variables.telega}}}
 								</div>
 							</a>
 						</div>

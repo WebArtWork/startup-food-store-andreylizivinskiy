@@ -2,11 +2,21 @@
 	"name": "product",
 	"products": {
 		"id": "/product",
-		"price": 1200,
+		"price": "200GRN",
+		"weight": "250G",
 		"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-        "thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-        "thumbs": ["https://neryxomka.com/andriilizvinskiy/img/welcome.png"],
-		"name": "product"
-	}
+		"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, ",
+        "thumb": "/andriilizvinskiy/img/product.png",
+		"name": "Name of dishes"
+	},
+	"tags": [
+		{
+			"name": "ПІЦЦА",
+			"id": "pizza"
+		},
+		{
+			"name": "СУШІ",
+			"id": "sushi"
+		}
+	]
 }

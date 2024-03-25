@@ -326,8 +326,9 @@ input{
 			transition: all .3s;
 			cursor: pointer;
 			color: #fff;
-			&:first-child{
-				margin-bottom: 15px;
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0;
 			}
 			&-img{		
 				margin-right: 10px;

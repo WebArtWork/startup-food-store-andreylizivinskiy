@@ -6,24 +6,29 @@
 	"top_products": [
 		{
 			"id": "/product",
-			"price": 1200,
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-			"name": "product"
+			"thumb": "/andriilizvinskiy/img/category.png",
+			"name": "CATEGORI OF FOOD 1"
 		},
 		{
 			"id": "/product",
 			"price": 1200,
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-			"name": "product"
+			"thumb": "/andriilizvinskiy/img/category.png",
+			"name": "CATEGORI OF FOOD 2"
 		},
 		{
 			"id": "/product",
 			"price": 1200,
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-			"name": "product"
+			"thumb": "/andriilizvinskiy/img/category.png",
+			"name": "CATEGORI OF FOOD 3"
+		},
+		{
+			"id": "/product",
+			"price": 1200,
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+			"thumb": "/andriilizvinskiy/img/category.png",
+			"name": "CATEGORI OF FOOD 4"
 		}
 	],
 	"products": [
@@ -31,21 +36,21 @@
 			"id": "/product",
 			"price": 1200,
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
+			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 			"name": "product"
 		},
 		{
 			"id": "/product",
 			"price": 1200,
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
+			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 			"name": "product"
 		},
 		{
 			"id": "/product",
 			"price": 1200,
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
+			"thumb": "https://neryxomka.com/andriilizvinskyilight/img/welcome.png",
 			"name": "product"
 		}
 	],
@@ -53,20 +58,24 @@
 		{
 			"id": "/article",
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-			"name": "article"
+			"thumb": "/andriilizvinskiy/img/blog/1.png",
+			"name": "Article name 1"
 		},
 		{
 			"id": "/article",
 			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-			"name": "article"
+			"thumb": "/andriilizvinskiy/img/blog/2.png",
+			"name": "Article name 2"
+		}
+	],
+	"advantege": [
+		{
+			"name": "article",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
 		},
 		{
-			"id": "/article",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "https://neryxomka.com/andriilizvinskiy/img/welcome.png",
-			"name": "article"
+			"name": "article",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
 		}
 	]
 }
