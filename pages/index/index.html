@@ -33,10 +33,10 @@
 		<div class="container">
 			<div class="welcome__text">
 				<div class="welcome__title">
-					{{{variables.Wtitle}}}
+					{{{variables.welcomeTitle}}}
 				</div>
 				<div class="welcome__description">
-					{{{variables.Wdescription}}}
+					{{{variables.welcomeDesc}}}
 				</div>
 				<div class="welcome__btn-wrap">
 					<a href="/products" class="btn">Menu</a>
@@ -48,8 +48,8 @@
 		<div class="container">
 			<div class="dishes-wrap">
 				<div class="dishes-text">
-					<div class="dishes-text__title title-l">Our dishes</div>
-					<div class="dishes-text__description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like.</div>
+					<div class="dishes-text__title title-l">{{{variables.foodMainTitile}}}</div>
+					<div class="dishes-text__description">{{{variables.welcomeDesc}}}</div>
 					<div class="dishes-categories">
 						{% for product in top_products %}
 						<a href="" class="dishes-categories__wrap">
@@ -66,7 +66,7 @@
 					</div>
 				</div>
 				<div class="dishes-img">
-					<img src="/andriilizvinskiy/img/dishes.png" alt="">
+					<img src="{{{variables.foodImg}}}" alt="">
 				</div>
 			</div>
 
@@ -97,35 +97,33 @@
 		<div class="container">
 			<div class="restaurant-wrap">
 				<div class="restaurant-text__title--mobile title-l">
-					Our restourant
+					{{{variables.restMainTitile}}}
 				</div>
 				<div class="restaurant-slider">
 					<div class="restaurant-slider__wrap">
 						<div class="restaurant-slider__img">
-							<img src="/andriilizvinskiy/img/slider/1.png" alt="">
+							<img src="{{{variables.restFirstImg}}}" alt="">
 						</div>
 						<div class="restaurant-slider__img">
-							<img src="/andriilizvinskiy/img/slider/2.png" alt="">
+							<img src="{{{variables.restSecImg}}}" alt="">
 						</div>
 						<div class="restaurant-slider__img">
-							<img src="/andriilizvinskiy/img/slider/3.png" alt="">
+							<img src="{{{variables.restThirdImg}}}" alt="">
 						</div>
 						<div class="restaurant-slider__img">
-							<img src="/andriilizvinskiy/img/slider/1.png" alt="">
+							<img src="{{{variables.restFirstImg}}}" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="restaurant-text">
 					<div class="restaurant-text__title title-l">
-						Our restourant
+						{{{variables.restMainTitile}}}
 					</div>
 					<div class="restaurant-text__description">
-						<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-						as opposed to using 'Content here, content here', making it look like.</p>
-						<p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-							as opposed to using 'Content here, content here', making it look like.</p>
+						{{{variables.restDesc}}}
 					</div>
 					<div class="restaurant-advantages">
+						{% for adva in advantege %}
 						<div class="restaurant-advantages__wrap">
 							<div class="restaurant-advantages__item">
 								<div class="restaurant-advantages__img">
@@ -133,59 +131,15 @@
 								</div>
 								<div class="restaurant-advantages__text">
 									<div class="restaurant-advantages__title">
-										Edvanteges
+										{{{adva.name}}}
 									</div>
 									<div class="restaurant-advantages__description">
-										loado’askdosad’fmadsfmsad; kmdsa;kf mads; mfads;k mfdas;loado’askdosad’fmads
+										{{{adva.short}}}
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="restaurant-advantages__wrap">
-							<div class="restaurant-advantages__item">
-								<div class="restaurant-advantages__img">
-									
-								</div>
-								<div class="restaurant-advantages__text">
-									<div class="restaurant-advantages__title">
-										Edvanteges
-									</div>
-									<div class="restaurant-advantages__description">
-										loado’askdosad’fmadsfmsad; kmdsa;kf mads; mfads;k mfdas;loado’askdosad’fmads
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="restaurant-advantages__wrap">
-							<div class="restaurant-advantages__item">
-								<div class="restaurant-advantages__img">
-									
-								</div>
-								<div class="restaurant-advantages__text">
-									<div class="restaurant-advantages__title">
-										Edvanteges
-									</div>
-									<div class="restaurant-advantages__description">
-										loado’askdosad’fmadsfmsad; kmdsa;kf mads; mfads;k mfdas;loado’askdosad’fmads
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="restaurant-advantages__wrap">
-							<div class="restaurant-advantages__item">
-								<div class="restaurant-advantages__img">
-									
-								</div>
-								<div class="restaurant-advantages__text">
-									<div class="restaurant-advantages__title">
-										Edvanteges
-									</div>
-									<div class="restaurant-advantages__description">
-										loado’askdosad’fmadsfmsad; kmdsa;kf mads; mfads;k mfdas;loado’askdosad’fmads
-									</div>
-								</div>
-							</div>
-						</div>
+						{% endfor %}
 					</div>
 				</div>
 			</div>
@@ -194,7 +148,7 @@
 	<section class="blog">
 		<div class="container">
 			<div class="blog__title title-l">
-				Blog
+				{{{variables.artcileMainTitile}}}
 			</div>
 			<div class="blog-wrapper">
 				{% for article in articles %}
@@ -223,7 +177,7 @@
 	<section class="contacts">
 		<div class="container">
 			<div class="contacts-links__title title-l">
-				Contacts
+				{{{variables.contactsMainTitile}}}
 			</div>
 			<div class="contacts-wrap">
 				<div class="contacts-links">

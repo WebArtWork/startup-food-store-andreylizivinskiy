@@ -68,18 +68,14 @@
 			"name": "Article name 2"
 		}
 	],
-	"mainarc": [
+	"advantege": [
 		{
-			"id": "/article",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "andriilizvinskyilight/img/blog/3.png",
-			"name": "article"
+			"name": "article",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
 		},
 		{
-			"id": "/article",
-			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
-			"thumb": "andriilizvinskyilight/img/blog/3.png",
-			"name": "article"
+			"name": "article",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."
 		}
 	]
 }
